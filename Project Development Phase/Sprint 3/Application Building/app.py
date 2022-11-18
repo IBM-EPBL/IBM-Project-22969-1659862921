@@ -10,22 +10,22 @@ model = load_model('ECG.h5')
 @app.route("/")
 @app.route("/home")
 def default():
-    return render_template('/templates/index.html')
+    return render_template('/index.html')
 
 @app.route("/info")
 def information():
-    return render_template("/templates/info.html")
+    return render_template("/info.html")
 
 @app.route("/about")
 def about_us():
-    return render_template('/templates/about.html')
+    return render_template('/about.html')
 @app.route("/contact")
 def contact_us():
-    return render_template('/templates/contact.html')
+    return render_template('/contact.html')
 
 @app.route("/upload")
 def test():
-    return render_template("/templates/predict.html")
+    return render_template("/predict.html")
 
 @app.route("/predict",methods=["GET","POST"])
 def upload():
