@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Heart - About Us</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="/static/images/logo-1.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+</head>
+
+<body>
+    <div class="row">
+
+        <div id="mySidebarDes" class="sidebar col-auto" style="height: 100vh;width: 18rem;position: fixed;">
+
+            <a href="/home" class="mainLink mx-4" style="font-weight: 600;font-family:cursive;">Home</a>
+
+            <a href="/about" class="mx-4" style="font-weight: 600;font-family:cursive;">About</a>
+
+            <a href="/contact" class="mx-4" style="font-weight: 600;font-family:cursive;">Contact</a>
+
+            <a href="/upload" class="btn1 mx-4" style="font-weight: 600;font-family:cursive;">Predict</a>
+
+            <img src="/static/images/logo-2.png" alt="" class="img-fluid mx-4" style="border-radius: 50%;width: 80%;">
+
+        </div>
+
+        <div id="sideRes" style="display: none;position: fixed;">
+            <div id="mySidebar" class="sidebar" style="height: 0vh !important;width: 0rem;">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+                <a href="/home" class="mainLink mx-3" style="font-weight: 600;font-family:cursive;">Home</a>
+
+                <a href="/about" class="mx-3" style="font-weight: 600;font-family:cursive;">About</a>
+
+                <a href="/contact" class="mx-3" style="font-weight: 600;font-family:cursive;">Contact</a>
+
+                <a href="/upload" class="btn1 mx-3" style="font-weight: 600;font-family:cursive;">Predict</a>
+
+                <img src="/static/images/logo-2.png" alt="" class="img-fluid mx-4"
+                    style="border-radius: 50%;width: 80%;">
+
+            </div>
+
+            <div id="main">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </div>
+
+        </div>
+
+        <div class="col-10 d-flex-wrap" id="home" style="margin: 2rem 0rem 2rem 18rem;">
+            <h1 class="text-center my-3 px-5 fw-bold display-2" style="font-family:cursive;letter-spacing: 5px;">
+                Know Your
+                <img src="/static/images/logo-1.png" alt=""> Heart
+            </h1>
+            <h4 class="text-center my-3 px-5 fw-bold display-6" style="font-family:cursive;letter-spacing: 5px;">
+                About Us
+            </h4>
+            <div class="col-11 mx-5 my-2 mt-5">
+                <div class="row my-3 py-3 rounded">
+                    <h3 class="mx-2 text-justify">
+                        This Web application is part of Naliyathiran project offered by Anna University collabrated with
+                        IBM. In this project, we build an effective electrocardiogram (ECG) arrhythmia classification
+                        model
+                        using a convolutional
+                        neural network (CNN), in which we classify ECG into seven categories, one being normal and the
+                        other
+                        six being different
+                        types of arrhythmia using deep CNN with grayscale ECG 2-D Spectral images. We are creating a web
+                        application where
+                        the user selects the image which is to be classified. The image is fed into the model that is
+                        trained and the suitable
+                        class will be displayed on the webpage.
+                    </h3>
+                </div>
+                <div class="row my-3 py-3 rounded">
+                    <div class="col card text-center mx-2">
+                        <div class="img-fluid">
+                            <img src="/static/images/girl.png" style="width: 50%;">
+                        </div>
+                        <h3 class="text-center my-3 px-3 fw-bold display-6"
+                            style="font-family:cursive;letter-spacing: 3px;">Ragavi R</h3>
+                        <p class="mx-5 text-justify">Full Stack Web Developer & Deep Learning Engineer</p>
+                    </div>
+                    <div class="col card text-center mx-2">
+                        <div class="img-fluid">
+                            <img src="/static/images/girl.png" style="width: 50%;">
+                        </div>
+                        <h3 class="text-center my-3 fw-bold display-6"
+                            style="font-family:cursive;letter-spacing: 3px;">Pushpamala R</h3>
+                        <p class="mx-5 text-justify">Web Designer & Deep Learning Analyst</p>
+                    </div>
+                    <div class="col card text-center mx-2">
+                        <div class="img-fluid">
+                            <img src="/static/images/girl.png" style="width: 50%;">
+                        </div>
+                        <h3 class="text-center my-3 px-1 fw-bold display-6"
+                            style="font-family:cursive;letter-spacing: 3px;">Priyanka V</h3>
+                        <p class="mx-5 text-justify">Data Analyst & Frontent Designer</p>
+                    </div>
+                    <div class="col card text-center mx-2">
+                        <div class="img-fluid">
+                            <img src="/static/images/boy.png" style="width: 50%;">
+                        </div>
+                        <h3 class="text-center my-3 px-4 fw-bold display-6"
+                            style="font-family:cursive;letter-spacing: 3px;">Raajeev Ranjjan K R</h3>
+                        <p class="mx-5 text-justify">Data Analyst & Frontent Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "15rem";
+            document.getElementById("mySidebar").style.height = "100vh";
+            document.getElementById("main").style.display = "none";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("mySidebar").style.height = "0vh";
+            document.getElementById("main").style.display = "inline-block";
+        }
+    </script>
+
+</body>
+
+</html>
