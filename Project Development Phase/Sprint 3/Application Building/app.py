@@ -1,9 +1,12 @@
 import os
 import numpy as np
 from flask import Flask, request, render_template
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing import image
-from PIL import Image
+# from tensorflow.keras.models import load_model
+# from tensorflow.keras.preprocessing import image
+# from PIL import Image
+from keras.preprocessing.image import image_utils
+# from keras.preprocessing.image import img_to_array
+from keras.models import load_model
 
 app = Flask(__name__)
 model = load_model('ECG.h5')
@@ -36,8 +39,8 @@ def upload():
         filepath = os.path.join(basepath, "uploads", f.filename)
         f.save(filepath)
 
-        img = image.load_img(filepath, target_size=(64, 64))
-        x = image.img_to_array(img)
+        img = image_utils.load_img(filepath, target_size=(64, 64))
+        x = image_utils.img_to_array(img)
         x = np.expand_dims(x, axis=0)
 
         preds = model.predict(x)
